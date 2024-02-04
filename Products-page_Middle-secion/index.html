@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        body{
+             /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            min-height: 100vh;
+            background: url(vecteezy_technology-abstract-network-background-concept-with-data_28637993.mp4) no-repeat center center fixed; 
+            background-size: cover;
+          margin: 0;
+          padding: 0;
+        
+          
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            padding: 40px 0;
+            max-width: 100%;
+           
+           
+
+        }
+        .container .card{
+            position: relative;
+            width: 300px; 
+            
+            height: 370px;
+            box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5),
+            inset -5px -5px 5px rgba(255,255,255,0.5),
+            5px 5px 5px rgba(0,0,0,.05),
+            -5px -5px 5px rgba(255,255,255,0.5);
+            border-radius: 15px;
+            margin: 30px;
+            
+
+        }
+        .container .card .box{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            background: #ebf5fc;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+         .container .card:hover .box{
+            transform: translateY(-60px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            background:linear-gradient(45deg,#b95ce4,#4f29cc);
+
+
+        } 
+        .container .card .box .content{
+            padding: 20px;
+            text-align: center;
+        }
+        .container .card .box .content h2{
+            position: absolute;
+            top: -10px;
+            right: 30px;
+            font-size: 8em;
+            color: rgba(0,0,0,.02);
+            transition: 0.5s;
+        }
+        .container .card:hover .box .content h2{
+            color: rgba(0,0,0,.05);
+
+        }
+        .container .card .box .content h3{
+            font-size: 1.8em;
+            color: #777;
+            z-index: 1;
+            transition: 0.5s;
+            padding-bottom: 30px;
+
+        }
+        .container .card .box .content p{
+            font-size: 1em;
+            font-weight: 300;
+            color: #777;
+            z-index: 1;
+            transition: 0.5s;
+        }
+        .container .card:hover .box .content h3,
+        .container .card:hover .box .content p{
+            color: white;
+        }
+        .container .card .box .content a{
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            background: #03a9f4;
+            margin-top: 15px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .container .card:hover .box .content a{
+            background:#ff568f ;
+        }
+       
+        .gadai h2{
+            text-align: center;
+            padding: 20px;
+            line-height: 10px;
+            font-size: 50px;
+            color: white;
+        }
+        .pal{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+            position: relative;
+          
+        }
+        .videop{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (min-aspect-ratio:16/9){
+            .videop{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-aspect-ratio:16/9){
+            .videop{
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .background-heading {
+            position: absolute;
+            top: 15%;
+            
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Set a higher z-index to place it over the video */
+            color: white;
+            text-align: center;
+            font-size: 35px;
+        }
+    
+    </style>
+</head>
+<body>
+   
+    <div class="pal">
+       
+        <video autoplay loop muted plays-inline class="videop">
+            <source src="vecteezy_technology-abstract-network-background-concept-with-data_28637993.mp4"type=video/mp4>
+        </video>
+        <div class="background-heading">
+            <h2>Why Choose Shihaan Tech for Smart City Solutions?</h2>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+       
+    <div class="container">
+       
+
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Innovation at Every Turn</h3>
+                    <p>Stay ahead with our commitment to continuous innovation in smart city technologies.
+                        
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Proven Expertise</h3>
+                    <p>Benefit from our extensive experience in delivering transformative solutions to cities worldwide.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Customizable Solutions</h3>
+                    <p>Tailor our smart city offerings to meet the unique needs and challenges of your urban environment.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h2>04</h2>
+                    <h3>Collaborative Approach</h3>
+                    <p>Partner with us for a collaborative journey towards creating a smarter, safer, and more sustainable city.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> 
