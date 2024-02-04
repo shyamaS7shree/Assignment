@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+ 
+
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+
+        *{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            background: url(vecteezy_data-neural-network-ai-technology-cloud-computing-bits_21723025.mp4) no-repeat center center fixed; 
+            background-size: cover;
+          margin: 0;
+          padding: 0;
+        }
+        header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: .8s;
+            background-color: white; 
+            z-index: 500;
+            height: 90px;
+           
+           
+        }
+        header.sticky {
+            background: rgba(255,255,255,.1); 
+            position: fixed;
+            padding: 20px 3%;
+            backdrop-filter: blur(30px);
+            box-shadow:0 0 10px 0 rgba(0,0,0,.2);
+
+        }
+        
+        header .logo{
+            color: white;
+            font-weight: 800;
+            font-size: 20px;
+            
+        }
+        header .logo img{
+            width: 150px;
+            height: 60px;
+        }
+        header .links{
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            margin-left: 60px;
+            font-weight: 500;
+        }
+        header .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+
+        }
+        .banner{
+            background:url(img.webp);
+            background-size: cover;
+            height: 100vh;
+            background-position: center center;
+        }
+        .content{
+            background: yellowgreen;
+           height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px 5%;
+        }
+        .content h1{
+            font-size: 55px;
+        }
+        .content p{
+            font-size: 18px;
+        }
+        .abhi
+        {
+            border-radius: 50px;
+            padding: 15px;
+       border:1px white;
+            font-size: 20px;
+            font-weight: 700;
+            
+        }
+        .abhi button{
+            cursor: pointer;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 110px 5%;
+            position: relative;
+            color: white;
+            text-align: left;
+            min-height: 100vh;
+            
+        }
+        .box video{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+           
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .box a.boxBtn{
+            padding: 13px 35px;
+            background: transparent;
+            border-radius: 50px;
+            color: white;
+            border: 2px solid white;
+            transition: all .5s;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .box a.boxBtn:hover{
+            background: white;
+            color: black;
+        }
+        .box h1{
+            font-family: 'Poppins', sans-serif;
+            font-size: 70px;
+            padding-left: 30px;
+        }
+        .box h4{
+            text-align: left;
+            font-size: 22px;
+            padding: 20px;
+            font-weight: 500;
+            font-family: 'Work Sans', sans-serif;
+
+           
+
+        }
+        .boxBtn{
+            text-decoration: none;
+        }
+        .pa{
+            position: relative;
+            border: 1px solid rgba(255,255,255,1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+            padding: 30px 20px;
+            width: 100%;
+            height: 82vh;
+           
+        }
+        .pa::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            backdrop-filter: blur(4px);
+            z-index: -1;
+        }
+        @media (max-width:800px)
+        {
+            .box{
+                min-height:600px;
+            }
+            .box h1{
+                font-size: 32px;
+
+            }
+        }
+@media (max-width:1000px){
+    .box{
+        padding: 100px 50px;
+    }
+
+}
+@media (max-width:600px){
+    .box{
+        padding: 12px 30px;
+    }
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+  
+    backdrop-filter:blur(17px) ;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.mobile-menu {
+            display: none;
+            cursor: pointer;
+        }
+     
+        @media (max-width: 968px) {
+            header .links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            header.sticky .links {
+                display: none;
+            }
+
+            header.sticky .sidebar {
+                display: flex;
+            }
+            header ul{
+                width: 100%;
+                list-style: none;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            header li{
+                margin-top: 20px;
+                height: 50px;
+            }
+            header li a{
+                height: 100%;
+                padding: 0 30px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: black;
+            }
+            header li a:hover{
+                background-color: white;
+            }
+            header li:first-child{
+                margin-right: auto;
+            }
+        }     
+        
+        
+     </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="Shihaan-transparent-logo.png"></a>
+        <div class="mobile-menu" onclick="toggleMobileMenu()">☰
+        <ul class="sidebar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><button class="abhi">Schedule a call</button></li>
+        </ul>
+    </div>
+  
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Products</a>
+            <a href="#">Contact Us</a>
+            <button class="abhi">Schedule a call</button>
+        </div>
+
+        
+    </header>
+    
+    <section class="box">
+        <video src="vecteezy_neural-network-ai-technology-cloud-computing-bits-internet_8800861.mp4" autoplay muted loop></video>
+        <div class="pa">
+        <h1>Building Smart <br>Eco-system
+        </h1>
+        <br>
+        <br>
+        <h4>Creating an eco-system for smart cities<br> involves integrating innovative technologies <br>and sustainable solutions to enhance urban<br> living, foster environmental stewardship, and <br>ensure long-term resilience.</h4> <br> <br>
+        <a href="#" class="boxBtn">Our Products</a>
+    </div>
+    </section>
+
+    
+    <div class="banner"></div>
+    
+    <script>
+        const menu = document.querySelector('header');
+        let sidebar = document.querySelector('.sidebar');
+    
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 1) {
+                menu.classList.add('sticky');
+            } else {
+                menu.classList.remove('sticky');
+            }
+        });
+    
+        function toggleMobileMenu() {
+            sidebar.style.display = sidebar.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+    
+</body>
+</html>
